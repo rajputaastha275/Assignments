@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            background-color: lightgrey;
+        }
+        .navbar{
+            display: flex;
+            gap: 100px;
+            background-color: grey;
+            padding-block-end: 20px;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 50px;
+        }
+        .items{
+            padding: 20px;
+            overflow: hidden;
+        }
+        .items img{
+             width: 100%;
+             height: 400px;
+            object-fit: cover;
+            border-radius: 20px;
+            border-color: black;
+            border-width: 10px;
+        }
+        .items :hover{
+            transform: scale(1.1);
+            transition: 0.5s;
+            border-radius: 20px;
+        }
+        .text{
+            font-size: 20px;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        a{
+            font-size: 30px;
+            align-items: center;
+        }
+        .c{
+             height: 200px;
+            /* background-color: rebeccapurple; */
+            background-image: linear-gradient(red,orange, yellow);
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar" style="font-size: 40px;">
+        <a href = "#Home">Home</a>
+        <a href = "#Landscape">Landscapes</a>
+        <a href = "#Wildlife">Wildlife</a>
+        <a href = "#Technology">Technology</a>
+        <a href = "#Contact Us">Contact</a>
+    </div>
+    <div class="c" style="height: 200px; font-size: 30px;">
+        Explore a beautiful collection of images from different categories.
+        Discover breathtaking landscapes, fascinating wildlife, and innovative
+        technology through our carefully selected gallery.<br>
+        From peaceful landscapes and breathtaking views to amazing animals
+        and innovative technological creations, each image tells a unique
+        story. Take a journey through our carefully organized collections
+        and experience the beauty captured through photography.<br>
+        Browse through our gallery.
+    </div>
+    <h1 style="font-size: 60px; " align = "center">Landscapes</h1>
+    <div class="grid-container" id="Landscapes">
+        
+        <div class="items">
+            <img src="https://www.adorama.com/alc/wp-content/uploads/2018/11/landscape-photography-tips-yosemite-valley-feature.jpg" alt ="landscape" height="300px">
+            <br>
+            <a href="https://www.adorama.com/alc/wp-content/uploads/2018/11/landscape-photography-tips-yosemite-valley-feature.jpg" target="_blank" style="align-items: center;" class="text"> View Full Image</a>
+        </div>
+        <div class="items">
+            <img src="https://thumbs.dreamstime.com/b/beautiful-landscape-valley-alpine-mountains-small-houses-seefeld-rural-scene-majestic-picturesque-view-40712070.jpg" alt="landscape" height="300px">
+            <a href="https://thumbs.dreamstime.com/b/beautiful-landscape-valley-alpine-mountains-small-houses-seefeld-rural-scene-majestic-picturesque-view-40712070.jpg" target="_blank" style="align-items: center ;" class="text">View Full Image</a>
+        </div>
+        <div class="items">
+            <img src="https://t3.ftcdn.net/jpg/01/29/16/34/360_F_129163457_C5k3ZmX5s1qJb1Wz6NZwFNSTdXfXsmru.jpg" alt="landscape" height="300px">
+            <a href="https://t3.ftcdn.net/jpg/01/29/16/34/360_F_129163457_C5k3ZmX5s1qJb1Wz6NZwFNSTdXfXsmru.jpg" target="_blank" style="align-items: center ;" class="text">View Full Image</a>
+        </div>
+        <div class = "items">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi-O9OCjpI-7q-D_7cRbQ1AYOO-SBSbNi3zw&s" alt="landscape" height="300px">
+            <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi-O9OCjpI-7q-D_7cRbQ1AYOO-SBSbNi3zw&s" target="_blank" style="align-items: center ;" class="text">View Full Image</a>
+        </div>
+        <div class="items">
+            <img src="https://marketplace.canva.com/MADasktKyQ4/1/thumbnail_large-1/canva-colorful-summer-landscape-MADasktKyQ4.jpg"  alt="landscape" height="300px">
+            <a href="https://marketplace.canva.com/MADasktKyQ4/1/thumbnail_large-1/canva-colorful-summer-landscape-MADasktKyQ4.jpg" target="_blank" style="align-items: center ;" class="text">View Full Image</a>
+        </div>
+        <div class="items">
+            <img src="https://images.photowall.com/products/42556/summer-landscape-with-river.jpg?h=699&q=85" alt="landscape" height="300px">
+            <a href="https://images.photowall.com/products/42556/summer-landscape-with-river.jpg?h=699&q=85"  target="_blank" style="align-items: center ;" class="text">View Full Image</a>
+        </div>
+        </div>
+    <h1 style="font-size: 60px; " align = "center">Wildlife</h1>
+    <div class="grid-container" id="Wildlife">
+        <div class="items">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ823_gf6u0is4ASQz6NQ_MSl0h8J55YxRBg&s" alt="landscape" height="300px">
+            <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ823_gf6u0is4ASQz6NQ_MSl0h8J55YxRBg&s" target="_blank" style="align-items: center ;" class="text">View Full Image</a>
+        </div>
+        <div class="items">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShoX_EEStIUxQ_XTIKaOf2T4QdJQO9u5Teug&s"  alt="landscape" height="300px">
+            <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShoX_EEStIUxQ_XTIKaOf2T4QdJQO9u5Teug&s" target="_blank" style="align-items: center ;" class="text">View Full Image</a>
+        </div>
+        <div class="items">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShnsLgJYbuAeRHrdhT1FuIpoaYhAEibx5zSA&s" alt="landscape" height="300px">
+            <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShnsLgJYbuAeRHrdhT1FuIpoaYhAEibx5zSA&s" target="_blank" style="align-items: center ;" class="text">View Full Image</a>
+        </div>
+        <div class="items">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqoXI60_nV0WBJt5U0ndYdBnqs24ksczYX_w&s" alt="landscape" height="300px">
+            <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqoXI60_nV0WBJt5U0ndYdBnqs24ksczYX_w&s" target="_blank" style="align-items: center ;" class="text">View Full Image</a>
+        </div>
+        <div class="items">
+            <img src="https://media.istockphoto.com/id/923884086/photo/two-bull-elk-in-banff.jpg?s=612x612&w=0&k=20&c=9WMiqT03xVs7qpzEixlfhoiKSZc2KhS7Vckc3O8PdH4=" alt="landscape" height="300px">
+            <a href="https://media.istockphoto.com/id/923884086/photo/two-bull-elk-in-banff.jpg?s=612x612&w=0&k=20&c=9WMiqT03xVs7qpzEixlfhoiKSZc2KhS7Vckc3O8PdH4=" target="_blank" style="align-items: center ;" class="text">View Full Image</a>
+        </div>
+        <div class="items">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Maki.jpg/330px-Maki.jpg"  alt="landscape" height="300px">
+            <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Maki.jpg/330px-Maki.jpg" target="_blank" style="align-items: center ;" class="text">View Full Image</a>
+        </div>
+    </div>
+    <h1 style="font-size: 60px; " align = "center">Technology</h1>
+    <div class="grid-container" id="Technology">
+        <div class="items">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi2-JKz6_xjgy2Jp2zFhUUo1vIXrLtlFIYVA&s" alt="landscape" height="300px">
+            <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi2-JKz6_xjgy2Jp2zFhUUo1vIXrLtlFIYVA&s" target="_blank" style="align-items: center ;" class="text">View Full Image</a>
+        </div>
+        <div class="items">
+            <img src="https://www.red-gate.com/simple-talk/wp-content/uploads/2024/05/technology_humanity.jpg" alt="landscape" height="300px">
+            <a href="https://www.red-gate.com/simple-talk/wp-content/uploads/2024/05/technology_humanity.jpg" target="_blank" style="align-items: center ;" class="text">View Full Image</a>
+        </div>
+        <div class="items">
+            <img src="http://innovationnewsnetwork.com/wp-content/uploads/2025/01/shutterstock_2309752637-696x391.jpg" alt="landscape" height="300px">
+            <a href="http://innovationnewsnetwork.com/wp-content/uploads/2025/01/shutterstock_2309752637-696x391.jpg" target="_blank" style="align-items: center ;" class="text">View Full Image</a>
+        </div>
+        <div class="items">
+            <img src="https://www.thealternativeboard.com/hubfs/bigstock-Cloud-Computing-Technology-And-372650233.jpg" alt="landscape" height="300px">
+            <a href="https://www.thealternativeboard.com/hubfs/bigstock-Cloud-Computing-Technology-And-372650233.jpg"  target="_blank" style="align-items: center ;" class="text">View Full Image</a>
+        </div>
+        <div class="items">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShl8W0Xh6kUsFFA8Pp24eNTGFTagzDq_i4vw&s" alt="landscape" height="300px">
+            <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShl8W0Xh6kUsFFA8Pp24eNTGFTagzDq_i4vw&s"  target="_blank" style="align-items: center ;" class="text">View Full Image</a>
+        </div>
+        <div class="items">
+            <img src="https://indoreinstitute.com/wp-content/uploads/2020/06/IIST.jpg.png"  alt="landscape" height="300px">
+            <a href="https://indoreinstitute.com/wp-content/uploads/2020/06/IIST.jpg.png" target="_blank" style="align-items: center ;" class="text">View Full Image</a>
+        </div>
+    </div>
+    
+    <div style="background-color: gray; height: 400px; border: 20px; border-color: black;" id="Contact">
+        <h1 style="font-size: 60px; " align = "center">Contact Us</h1>
+        <p style="font-size: 30px; margin-left: 20px; margin-top: 30px;">
+    Welcome to our image gallery, where you can explore a collection of amazing images from different categories. Discover the beauty of nature through stunning landscapes, experience the fascinating world of wildlife, and explore the creativity and innovation of technology. This gallery is designed to bring together unique visuals that inspire curiosity and appreciation for the world around us.
+</p>
+<a href="malito:abc@gmail.com" style="align-content: center;">Mail us on: abc@gmail.com</a><br>
+<a href="tel:XXXXX XXXXX">Call us on: XXXXX XXXXX</a>
+<p style="font-size: 40px; text-align: right; margin-bottom: 20px;"> Created by - Aastha Rajput   </p>
+
+
+    </div>
+</body>
+</html>
