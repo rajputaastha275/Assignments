@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let m1, m2, m3, m4, m5, total, percentage, attendence;
+        m1 = parseInt(prompt("Enter marks of first subject"));
+        m2 = parseInt(prompt("Enter marks of second subject"));
+        m3 = parseInt(prompt("Enter marks of third subject"));
+        m4 = parseInt(prompt("Enter marks of fourth subject"));
+        m5 = parseInt(prompt("Enter marks of fifth subject"));
+        attendence = parseInt(prompt("Enter attendence"));
+        total = m1 + m2 + m3 + m4 + m5;
+        percentage = total / 5;
+        if(total >= 70)
+        {
+            if(attendence >= 75)
+            {
+                document.write(`<h1>Pass</h1>`)
+            }
+            else
+            {
+                document.write(`<h1>Attendence is Short</h1>`)
+            }
+        }
+        else
+        {
+            document.write(`<h1>Fail</h1>`)
+        }
+
+    </script>
+</body>
+</html>
