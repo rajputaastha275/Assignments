@@ -1,7 +1,9 @@
 let date, month;
 date = parseInt(prompt("Enter Date"));
 month = prompt("Enter month");
-if((date >= 21 && month == "March")||(date <= 19 && month == "April"))
+if(date >= 1 && date <= 31)
+{
+if((date >= 21 && month == "March" || month == "march" || month == "MARCH" && date <=31)||(date <= 19 && month == "April" || month == "april" || month == "APRIL" && date <=30))
 {
 document.write(`<table width = "100%" border = "1">
     <thead>
@@ -26,7 +28,7 @@ document.write(`<table width = "100%" border = "1">
 
 </table>`)
 }
- else if((date >= 20 && month == "April")||(date <= 20 && month == "May"))
+ else if((date >= 20 && month == "April" || month == "april" || month == "APRIL" && date <=30)||(date <= 20 && month == "May"|| month == "may" || month == "MAY" && date <=31))
 {
 document.write(`<table width = "100%" border = "1">
     <thead>
@@ -50,7 +52,7 @@ document.write(`<table width = "100%" border = "1">
 
 </table>`)
 }
- else if((date >= 21 && month == "May")||(date <= 20 && month == "June"))
+ else if((date >= 21 && month == "May" || month == "may" || month == "MAY" && date <=31)||(date <= 20 && month == "June" || month == "june" || month == "JUNE" && date <=30))
 {
 document.write(`<table width = "100%" border = "1">
     <thead>
@@ -74,7 +76,7 @@ document.write(`<table width = "100%" border = "1">
 
 </table>`)
 }
-else if((date >= 21 && month == "June")||(date <= 22 && month == "July"))
+else if((date >= 21 && month == "June" || month == "june" || month == "JUNE" && date <=30)||(date <= 22 && month == "July" || month == "july" || month == "JULY" && date <=31))
 {
 document.write(`<table width = "100%" border = "1">
     <thead>
@@ -98,7 +100,7 @@ document.write(`<table width = "100%" border = "1">
 
 </table>`)
 }
-else if((date >= 23 && month == "July")||(date <= 22 && month == "August"))
+else if((date >= 23 && month == "July" || month == "july" || month == "JULY" && date <=31)||(date <= 22 && month == "August" || month == "august" || month == "AUGUST" && date <=31))
 {
 document.write(`<table width = "100%" border = "1">
     <thead>
@@ -122,7 +124,7 @@ document.write(`<table width = "100%" border = "1">
 
 </table>`)
 }
-else if((date >= 23 && month == "August")||(date <= 22 && month == "September"))
+else if((date >= 23 && month == "August" || month == "august" || month == "AUGUST" && date <=31)||(date <= 22 && month == "September" || month == "september" || month == "SEPTEMBER" && date <=30))
 {
 document.write(`<table width = "100%" border = "1">
     <thead>
@@ -146,7 +148,7 @@ document.write(`<table width = "100%" border = "1">
 
 </table>`)
 }
-else if((date >= 23 && month == "September")||(date <= 22 && month == "October"))
+else if((date >= 23 && month == "September" || month == "september" || month == "SEPTEMBER" && date <=30)||(date <= 22 && month == "October" || month == "october" || month == "OCTOBER" && date <=31))
 {
 document.write(`<table width = "100%" border = "1">
     <thead>
@@ -170,7 +172,7 @@ document.write(`<table width = "100%" border = "1">
 
 </table>`)
 }
-else if((date >= 23 && month == "October")||(date <= 21 && month == "November"))
+else if((date >= 23 && month == "October"  || month == "october" || month == "OCTOBER" && date <=31)||(date <= 21 && month == "November"  || month == "november" || month == "NOVEMBER" && date <=30))
 {
 document.write(`<table width = "100%" border = "1">
     <thead>
@@ -194,7 +196,7 @@ document.write(`<table width = "100%" border = "1">
 
 </table>`)
 }
-else if((date >= 22 && month == "November")||(date <= 21 && month == "December"))
+else if((date >= 22 && month == "November" || month == "november" || month == "NOVEMBER" && date <=30)||(date <= 21 && month == "December" || month == "december" || month == "DECEMBER" && date <=31))
 {
 document.write(`<table width = "100%" border = "1">
     <thead>
@@ -218,7 +220,7 @@ document.write(`<table width = "100%" border = "1">
 
 </table>`)
 }
-else if((date >= 22 && month == "December")||(date <= 19 && month == "January"))
+else if((date >= 22 && month == "December" || month == "december" || month == "DECEMBER" && date <=31)||(date <= 19 && month == "January" || month == "january" || month == "JANUARY" && date <=31))
 {
 document.write(`<table width = "100%" border = "1">
     <thead>
@@ -242,7 +244,7 @@ document.write(`<table width = "100%" border = "1">
 
 </table>`)
 }
-else if((date >= 20 && month == "January")||(date <= 18 && month == "February"))
+else if((date >= 20 && month == "January" || month == "january" || month == "JANUARY" && date <=31)||(date <= 18 && month == "February" || month == "february" || month == "FEBRUARY" && date <=29))
 {
 document.write(`<table width = "100%" border = "1">
     <thead>
@@ -266,7 +268,7 @@ document.write(`<table width = "100%" border = "1">
 
 </table>`)
 }
-else if((date >= 19 && month == "February")||(date <= 20 && month == "March"))
+else if((date >= 19 && month == "February" || month == "february" || month == "FEBRUARY" && date <=29)||(date <= 20 && month == "March" || month == "march" || month == "March" && date <=31))
 {
 document.write(`<table width = "100%" border = "1">
     <thead>
@@ -292,5 +294,10 @@ document.write(`<table width = "100%" border = "1">
 }
 else
 {
-    document.write("Enter valid date & month")
+    document.write("Invalid date or month")
+}
+}
+else
+{
+    document.write("Invalid date or month") 
 }
